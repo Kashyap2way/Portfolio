@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  background: linear-gradient(to right, #0a081f, #270049); /* Dark blue to purple gradient */
+  color: white;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden; /* Prevent scroll issues */
+}
+
+.page {
+  padding: 2rem;
+  margin-top: 3rem; /* Ensure content doesnâ€™t overlap with fixed header */
 }
 
 .App-logo {
@@ -28,11 +40,75 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.header {
+  position: fixed; /* Make sure the header stays at the top */
+  top: 0;
+  width: 100%;
+  z-index: 20; /* Higher than all images */
+  display: flex;
+  justify-content: flex-start; /* Align icons to the left */
+  align-items: center; /* Vertically center items */
+  padding: 10px 20px; /* Adjust padding as needed */
+  gap: 15px; /* Space between icons */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent header */
+}
+
+/* Image Animations */
+@keyframes moveDownFast {
+  0% {
+    top: -100%; /* Start off-screen */
+  }
+  100% {
+    top: 0%; /* End fully visible */
+  }
+}
+
+@keyframes moveDownSlow {
+  0% {
+    top: -100%; /* Start off-screen */
+  }
+  100% {
+    top: 0%; /* End fully visible */
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  100% {
+    top: 20%; /* Center vertically */
+    opacity: 1;
+  }
+}
+
+@keyframes moveDownSlower {
+  0% {
+    top: -100%; /* Start off-screen */
+  }
+  100% {
+    top: 0%; /* End slightly above the first image */
+  }
+}
+
+@keyframes moveDownSlowest {
+  0% {
+    top: -100%; /* Start off-screen */
+  }
+  100% {
+    top: 0%; /* End slightly higher */
+  }
+}
+
+/* Welcome Text Animation */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
