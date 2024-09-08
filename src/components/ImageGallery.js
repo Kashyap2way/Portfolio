@@ -58,7 +58,7 @@ const ImageGallery = () => {
             {/* First image */}
             <img
                 src={image1}
-                alt="Image 1"
+                alt="pic of 1"
                 style={{
                     position: 'absolute',
                     top: '3%',
@@ -76,7 +76,7 @@ const ImageGallery = () => {
             {/* Second image */}
             <img
                 src={image2}
-                alt="Image 2"
+                alt="pic of 2"
                 style={{
                     position: 'absolute',
                     top: '0%',
@@ -94,7 +94,7 @@ const ImageGallery = () => {
             {/* Third image */}
             <img
                 src={image3}
-                alt="Image 3"
+                alt="pic of 3"
                 style={{
                     position: 'absolute',
                     top: '0%',
@@ -112,7 +112,7 @@ const ImageGallery = () => {
             {/* Fourth image */}
             <img
                 src={image4}
-                alt="Image 4"
+                alt="pic of 4"
                 style={{
                     position: 'absolute',
                     top: '0%',
@@ -152,7 +152,7 @@ const ImageGallery = () => {
 
             <img
                 src={image5}
-                alt="Image 5"
+                alt="pic of 5"
                 style={{
                     position: 'absolute',
                     top: '0%',
@@ -169,7 +169,7 @@ const ImageGallery = () => {
 
             <img
                 src={image6}
-                alt="Image 6"
+                alt="pic of 6"
                 style={{
                     position: 'absolute',
                     top: '0%',
@@ -186,7 +186,7 @@ const ImageGallery = () => {
 
             <img
                 src={image7}
-                alt="Image 7"
+                alt="pic of 7"
                 style={{
                     position: 'absolute',
                     top: '0%',
@@ -203,7 +203,7 @@ const ImageGallery = () => {
 
             <img
                 src={image8}
-                alt="Image 8"
+                alt="pic of 8"
                 style={{
                     position: 'absolute',
                     top: '0%',
@@ -220,7 +220,7 @@ const ImageGallery = () => {
 
             <img
                 src={image9}
-                alt="Image 9"
+                alt="pic of 9"
                 style={{
                     position: 'absolute',
                     top: '0%',
@@ -237,7 +237,7 @@ const ImageGallery = () => {
 
             <img
                 src={image10}
-                alt="Image 10"
+                alt="pic of 10"
                 style={{
                     position: 'absolute',
                     top: '0%',
@@ -254,7 +254,7 @@ const ImageGallery = () => {
 
             <img
                 src={image11}
-                alt="Image 11"
+                alt="pic of 11"
                 style={{
                     position: 'absolute',
                     top: '0%',
