@@ -1,0 +1,55 @@
+/* Timeline container */
+.timeline {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #1a1a1a; /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Line in the middle of the screen */
+.timeline-line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #ffffff; /* White line */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: height 0.5s ease-in-out;
+}
+
+/* Points or items on the timeline */
+.timeline-item {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ff5733; /* Example color */
+  border-radius: 50%;
+  transform: translateX(-50%);
+  left: 50%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Example styles for timeline items */
+.item1 { top: 20%; }
+.item2 { top: 40%; }
+.item3 { top: 60%; }
+.item4 { top: 80%; }
+
+/* Animation for scrolling */
+@keyframes scroll-animation {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+/* Apply animation when items are in view */
+.timeline.scrolled .timeline-line {
+  animation: scroll-animation 2s ease-in-out forwards;
+}
