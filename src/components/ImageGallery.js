@@ -44,8 +44,8 @@ const ImageGallery = () => {
 
     const calculateTransform = (depthFactor) => {
         if (!animationComplete) return '';
-        const xMovement = (mousePos.x / window.innerWidth - 0.5) * depthFactor * 8;
-        const yMovement = (mousePos.y / window.innerHeight - 0.5) * depthFactor * 8;
+        const xMovement = (mousePos.x / window.innerWidth - 0.5) * depthFactor * 2;
+        const yMovement = (mousePos.y / window.innerHeight - 0.5) * depthFactor * 2;
         return `translate(${xMovement}px, ${yMovement}px)`;
     };
 
